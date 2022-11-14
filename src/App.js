@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
-function App() {
+import NavBar from './Components/Navbar.jsx';
+import Home from './Views/HomePage/Home.jsx';
+import Login from './Views/HomePage/Login.jsx';
+import Register from './Views/User/Register.jsx';
+import Category from './Views/Category/Category.jsx';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        {/* HomePage */}
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        {/* User */}
+        <Route path="/user/register" element={<Register />} />
+        {/* <Route path="/User" element={<UserHome />} /> */}
+        {/* <Route path="/User/update/:id" element={<UserUpdate />} /> */}
+        {/* Product */}
+        {/* <Route path="/product" element={<ProductHome />} />
+          <Route path="/product/register" element={<ProductRegister />} />
+          <Route path="/product/update/:id" element={<ProductUpdate />} /> */}
+        {/* Category */}
+        <Route path="/category" element={<Category />} />
+        {/* {<Route path="/category/register" element={<CategoryRegister />} /> */}
+        {/* {<Route path="/category/update/:id" element={<CategoryUpdate />} /> */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 

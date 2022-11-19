@@ -134,3 +134,25 @@ input {
   background: #0097fc;
   border-radius: 20px;
 }
+
+.botaomgr {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 8px;
+  margin: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.botaomgr:hover {
+  background-color: rgba(0, 0, 0, 0.21);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 8px;
+  margin: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+}

@@ -5,7 +5,8 @@ import NavBar from './Components/Navbar.jsx';
 import Home from './Views/HomePage/Home.jsx';
 import Login from './Views/HomePage/Login.jsx';
 import Register from './Views/User/Register.jsx';
-import Category from './Views/Category/Category.jsx';
+import Product from './Views/Product/Product.jsx';
+import Order from './Views/Order/Order.jsx';
 
 const App = () => {
   return (
@@ -20,11 +21,11 @@ const App = () => {
         {/* <Route path="/User" element={<UserHome />} /> */}
         {/* <Route path="/User/update/:id" element={<UserUpdate />} /> */}
         {/* Product */}
-        {/* <Route path="/product" element={<ProductHome />} />
-          <Route path="/product/register" element={<ProductRegister />} />
-          <Route path="/product/update/:id" element={<ProductUpdate />} /> */}
+        {<Route path="/product" element={<Product />} />}
+        {<Route path="/order" element={<Order />} />}
+        {/* {<Route path="/product/update/:id" element={<ProductUpdate />} />} */}
         {/* Category */}
-        <Route path="/category" element={<Category />} />
+        {/* <Route path="/category" element={<Category />} /> */}
         {/* {<Route path="/category/register" element={<CategoryRegister />} /> */}
         {/* {<Route path="/category/update/:id" element={<CategoryUpdate />} /> */}
       </Routes>

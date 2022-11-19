@@ -1,5 +1,0 @@
-<h5>Se não fazer cadastro</h5>
-                    <input className="cad" type="text" placeholder="Nome"></input>
-                    <input className="cad" type="email" placeholder="Email"></input>
-                    <input className="cad" type="senha" placeholder="Senha"></input>
-                    <input className="cad" type="senha" placeholder="Informe novamente a senha"></input>

@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import "../../Styles/App.css";
 import Button from "react-bootstrap/Button";
 
 function Register() {
+    const navigate = useNavigate();
     return (
         <div className="App">
             <header className="App-header">
@@ -15,6 +17,7 @@ function Register() {
                         <input className="cad" type="senha" placeholder="Informe a senha novamente "></input>
                     </div>
                     <Button href="/user/register">Cadastrar</Button>
+                    <Button onClick={() => navigate(-1)}>Voltar</Button>
                 </div>
             </header>
         </div>

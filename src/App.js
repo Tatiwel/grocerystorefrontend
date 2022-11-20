@@ -4,7 +4,7 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import NavBar from './Components/Navbar.jsx';
 import Home from './Views/HomePage/Home.jsx';
 import Login from './Views/HomePage/Login.jsx';
-import Register from './Views/User/Register.jsx';
+import Register from './Views/Register/Register.jsx';
 import Product from './Views/Product/Product.jsx';
 import Order from './Views/Order/Order.jsx';
 
@@ -17,7 +17,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         {/* User */}
-        <Route path="/user/register" element={<Register />} />
+        <Route path="/register" element={<Register />} />
         {/* <Route path="/User" element={<UserHome />} /> */}
         {/* <Route path="/User/update/:id" element={<UserUpdate />} /> */}
         {/* Product */}

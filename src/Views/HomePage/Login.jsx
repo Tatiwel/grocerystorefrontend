@@ -9,11 +9,14 @@ function Login() {
         <div className="App">
             <header className="App-header">
                 <div className='cx login'>
-                    <h1>Login</h1>
-                    <input type='email' placeholder='ex@ex.com.br' />
-                    <input type="password" placeholder='Senha' />
-                    <Button className='btn login'>Entrar </Button>
-                    <Button onClick={() => navigate(-1)}>Voltar</Button>
+                    <div className='input'>
+                        <h1>Login</h1>
+
+                        <input className="cad mt-2" type='email' placeholder='ex@ex.com.br' />
+
+                        <input className="cad mt-2" type="password" placeholder='Senha' />
+                    </div>
+                    <Button >Entrar </Button>
                 </div>
             </header >
         </div >

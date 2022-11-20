@@ -17,6 +17,7 @@ function Login() {
                         <input className="cad mt-2" type="password" placeholder='Senha' />
                     </div>
                     <Button >Entrar </Button>
+                    <Button onClick={() => navigate(-1)}>Voltar</Button>
                 </div>
             </header >
         </div >

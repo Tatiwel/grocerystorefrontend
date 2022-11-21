@@ -14,8 +14,8 @@ function Register() {
 
                         <input className="cad mt-2" type="text" placeholder="Nome " ></input>
                         <input className="cad mt-2" type="email" placeholder="Email "></input>
-                        <input className="cad mt-2" type="senha" placeholder="Senha "></input>
-                        <input className="cad mt-2" type="senha" placeholder="Informe a senha novamente "></input>
+                        <input className="cad mt-2" type="password" placeholder="Senha "></input>
+                        <input className="cad mt-2" type="password" placeholder="Informe a senha novamente "></input>
                     </div>
                     <Button onClick={() => navigate("/register")}>Cadastrar</Button>
                     <Button onClick={() => navigate("/")}>Voltar</Button>
